@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+
+# Env
+.env
+.env.local
+
+# Build
+dist/
+build/
+out/
+
+# Misc
+*.log
+.cache/
+
+# Local
+.local/
+*.local.*
