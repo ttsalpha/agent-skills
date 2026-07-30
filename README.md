@@ -18,11 +18,28 @@ Generate conventional commit messages with auto-detected type and scope from dif
 - Writing or improving a commit message
 - Reviewing changes for commit readiness
 
+### `/siuuu`
+
+Just for fun — the Claude Code logo (pixel mascot, rendered in half-block art from the
+official SVG) runs across the terminal and hits Ronaldo's "Siuuu" celebration jump,
+ending with a big `SIUUU!` banner in Claude orange. Plays live right on the chat screen.
+
+**Use when:**
+
+- Celebrating a win (merged PR, green tests, release shipped)
+- You just want to see it
+
+**Instant mode:** on first use the skill registers a `UserPromptSubmit` hook in
+`~/.claude/settings.json` (idempotent, backup kept, requires `python3`). After
+opening `/hooks` once (or restarting), typing `siuuu` plays the celebration instantly —
+no model turn, no tokens. Remove it anytime via `/hooks`.
+
 ## Skill Structure
 
 Each skill contains:
 
 - `SKILL.md` — Instructions for the agent
+- `scripts/` — (optional) executable scripts bundled with the skill
 
 ## Adding a new skill
 
