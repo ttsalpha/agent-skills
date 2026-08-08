@@ -17,9 +17,9 @@ celebration only — no code analysis, no file changes. run the animation and hy
    ```
 
 2. `--chat` finds the terminal Claude Code is running on, waits until Claude goes idle,
-   then plays the FULL live animation right on the chat screen (run, 360° spin jump,
-   landing, flashing SIUUU banner, all in Claude orange — then the chat UI is restored).
-   the tool output gets a static strip plus a marker line starting with
+   then plays the FULL live animation right on the chat screen (a dark walk-on, the run, the
+   360° spin jump, landing, flashing SIUUU banner, all in Claude orange — then the chat UI is
+   restored). the tool output gets a static strip plus a marker line starting with
    `▶ live animation plays right here`. show the static strip as-is and keep your
    reply SHORT so the show starts sooner.
 
@@ -46,4 +46,10 @@ celebration only — no code analysis, no file changes. run the animation and hy
 ## Rules
 
 - never modify, stage, or commit anything — this skill only runs the script
-- the script exits cleanly on Ctrl+C (restores cursor and screen); no cleanup needed
+- the script exits cleanly on Ctrl+C (restores cursor and screen, cuts the audio); no
+  cleanup needed
+- the animation has sound. it opens dark and slow on purpose — the mascot walks on while the
+  clip builds up, so the "SIUUU" lands on the touchdown frame. a quiet first few seconds is
+  the build-up, not a hang; don't kill it and don't re-run it.
+- `SIUUU_SOUND=0` mutes it and skips straight to the run. use that if the user asks for quiet
+  (headphones, a meeting, a recording).

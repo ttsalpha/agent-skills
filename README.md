@@ -21,8 +21,9 @@ Generate conventional commit messages with auto-detected type and scope from dif
 ### `/siuuu`
 
 Just for fun — the Claude Code logo (pixel mascot, rendered in half-block art from the
-official SVG) runs across the terminal and hits Ronaldo's "Siuuu" celebration jump,
-ending with a big `SIUUU!` banner in Claude orange. Plays live right on the chat screen.
+official SVG) walks on in the dark, runs across the terminal and hits Ronaldo's "Siuuu"
+celebration jump, ending with a big `SIUUU!` banner in Claude orange. Plays live right on the
+chat screen. Mute with `SIUUU_SOUND=0`.
 
 **Use when:**
 
