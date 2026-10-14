@@ -10,7 +10,10 @@ npx skills add ttsalpha/agent-skills
 
 ### `/commit`
 
-Generate conventional commit messages with auto-detected type and scope from diff.
+Generate commit messages with auto-detected type and scope from the diff. Reads
+`git log` first so it follows the convention the repo already uses, stages files by
+name (never `git add -A`), proposes splitting unrelated changes into atomic commits,
+and verifies the result afterwards. Never pushes and never opens a PR.
 
 **Use when:**
 
